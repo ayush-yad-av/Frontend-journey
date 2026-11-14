@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <!-- <link rel="stylesheet" href="payment.css"> -->
+</head>
+<body>
+    <div class="container">
+    <form action="/submit" method="post"> 
+        <H1>This is a payment form</H1>
+        <h2>contact information</h2>
+        <p>Name:* <input type="text" name="name" required placeholder="ayush"></p>
+       
+        <fieldset> <!--it is used to wrap things in a box and to keeep them together-->
+            <legend>Gender</legend>
+        <p>
+            male <input type="radio" name="gender" id="male">
+            female <input type="radio" name="gender" id="female"><!--if we wnt user to choose only one vale so we give same vale in name attribute-->
+
+        </p>
+        </fieldset>
+        <p>
+            address: <textarea name="address" id="address" cols="100" rows="10"></textarea>
+        </p>
+        <p>
+            email: <input type="email" name="email" id="email">
+        </p>
+        <p>pincode: <input type="number" name="pincode" id="pincode"></p>
+        <hr>
+           <h1>payment information</h1>
+           <p>card type
+            <select name="cardtype" id="card type">
+                <option value="">selet a card type</option>
+                <option value="visa card">visa card</option>
+                <option value="master card">mastercard</option>
+                <option value="hdfc card">hdfc card</option>
+            </select>
+           </p>
+           <p>
+           card Number: <input type="number" name="card number" id="card number">
+           </p>
+           <p>
+            expiry date: <input type="date" name="exp date" id="exp date">
+           </p>
+           <p>
+            cvv: <input type="password" name="cvv">
+            </p>
+        <hr>
+        <button>submit</button>    
+        </form>    
+    </div>
+
+</body>
+</html>

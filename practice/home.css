@@ -1,0 +1,30 @@
+*{
+    box-sizing: content-box;
+}
+header{
+    text-align: center;
+    background-color: darkgreen;
+    color: beige;
+}
+header h1{
+    font-size: 80px;
+    color: white;
+    border: 1px;
+}
+nav{
+    background-color: brown;
+    color: white;
+    text-align: left;
+    padding: 7px;
+    position: sticky;
+    top: 0%;
+}
+a{
+    background-color: black;
+    color: white;
+
+   
+}
+section h2{
+    background-color: rgb(49, 206, 29);
+}
